@@ -3,15 +3,12 @@
 ### Programming Languages
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=danilpavlov&layout=compact&langs_count=10&theme=tokyonight&hide_border=true"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=danilpavlov&layout=compact&langs_count=10&hide_border=true"
-    alt="Top languages"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg" />
+  <img src="assets/languages-light.svg" alt="Top programming languages" width="480" />
 </picture>
+
+<sub>Public non-fork repos, by bytes. Jupyter Notebook excluded — <code>.ipynb</code> embeds cell
+outputs, which inflates it to ~90%. Regenerate with <code>python3 scripts/gen_languages.py</code>.</sub>
 
 <!--
 **danilpavlov/danilpavlov** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

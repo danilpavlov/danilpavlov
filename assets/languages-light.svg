@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="142" viewBox="0 0 480 142" role="img" aria-label="Top programming languages">
+<clipPath id="bar"><rect width="480" height="10" rx="5.0"/></clipPath>
+<g clip-path="url(#bar)">
+<rect x="0.00" y="0" width="234.62" height="10" fill="#3D6117"/>
+<rect x="234.62" y="0" width="132.50" height="10" fill="#f34b7d"/>
+<rect x="367.12" y="0" width="66.16" height="10" fill="#3572A5"/>
+<rect x="433.28" y="0" width="16.93" height="10" fill="#000080"/>
+<rect x="450.21" y="0" width="8.64" height="10" fill="#197823"/>
+<rect x="458.86" y="0" width="6.14" height="10" fill="#da8e34"/>
+<rect x="465.00" y="0" width="5.52" height="10" fill="#51e0b3"/>
+<rect x="470.53" y="0" width="3.35" height="10" fill="#e34c26"/>
+<rect x="473.88" y="0" width="6.12" height="10" fill="#8b949e"/>
+<rect x="480.00" y="0" width="0.00" height="10" fill="#8b949e"/>
+</g>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#24292f">
+<circle cx="6" cy="28" r="5" fill="#3D6117"/>
+<text x="19" y="32">TeX 48.9%</text>
+<circle cx="6" cy="50" r="5" fill="#f34b7d"/>
+<text x="19" y="54">C++ 27.6%</text>
+<circle cx="6" cy="72" r="5" fill="#3572A5"/>
+<text x="19" y="76">Python 13.8%</text>
+<circle cx="6" cy="94" r="5" fill="#000080"/>
+<text x="19" y="98">Lua 3.5%</text>
+<circle cx="6" cy="116" r="5" fill="#197823"/>
+<text x="19" y="120">Makefile 1.8%</text>
+<circle cx="246" cy="28" r="5" fill="#da8e34"/>
+<text x="259" y="32">CMake 1.3%</text>
+<circle cx="246" cy="50" r="5" fill="#51e0b3"/>
+<text x="259" y="54">Shell 1.2%</text>
+<circle cx="246" cy="72" r="5" fill="#e34c26"/>
+<text x="259" y="76">HTML 0.7%</text>
+<circle cx="246" cy="94" r="5" fill="#8b949e"/>
+<text x="259" y="98">Other 1.3%</text>
+</g></svg>
