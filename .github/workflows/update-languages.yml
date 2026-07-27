@@ -1,0 +1,40 @@
+name: Update language stats
+
+on:
+  schedule:
+    # Mondays, 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-languages
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate chart
+        env:
+          # Lifts the API rate limit from 60/hour to 1000/hour. Scoped to this
+          # repo, so private repos stay uncounted; swap for a PAT with `repo`
+          # to include them.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/gen_languages.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/; then
+            echo "Language breakdown unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git commit -m "chore: refresh language stats"
+          git push
